@@ -15,7 +15,7 @@ use Perinci::Sub::Gen::AccessTable qw(gen_read_table_func);
 # VERSION
 
 our @EXPORT_OK = qw(
-                       bpom_list_food_ingredients
+                       bpom_list_food_ingredients_rba
                );
 
 our %SPEC;
