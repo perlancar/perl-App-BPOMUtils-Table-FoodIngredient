@@ -15,7 +15,7 @@ use Perinci::Sub::Gen::AccessTable qw(gen_read_table_func);
 # VERSION
 
 our @EXPORT_OK = qw(
-                       bpom_list_food_ingredients
+                       bpom_list_food_ingredients_old
                );
 
 our %SPEC;
@@ -20955,7 +20955,7 @@ our $data_idn_bpom_bahan_baku_pangan = [
 # END FRAGMENT id=data-idn_bpom_bahan_baku_pangan
 
 my $res = gen_read_table_func(
-    name => 'bpom_list_food_ingredients',
+    name => 'bpom_list_food_ingredients_old',
     summary => 'List ingredients in BPOM processed food division',
     table_data => $data_idn_bpom_bahan_baku_pangan,
     table_spec => $meta_idn_bpom_bahan_baku_pangan,
