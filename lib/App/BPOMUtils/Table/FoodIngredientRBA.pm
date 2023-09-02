@@ -7860,6 +7860,14 @@ _
         examples => [
         ],
     },
+    hooks => {
+        before_return => sub {
+            my %args = @_;
+            # XXX adjust other properties e.g. table.field_formats etc
+            $args{_func_res}[3]{'table.fields'} = ['status'];
+            1;
+        },
+    },
 );
 die "Can't generate function: $res->[0] - $res->[1]" unless $res->[0] == 200;
 
