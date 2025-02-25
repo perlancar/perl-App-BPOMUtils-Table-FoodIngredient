@@ -8546,7 +8546,7 @@ _
         before_return => sub {
             my %args = @_;
             # XXX adjust other properties e.g. table.field_formats etc
-            $args{_func_res}[3]{'table.fields'} = ['status'];
+            #$args{_func_res}[3]{'table.fields'} = ['status'];
             1;
         },
     },
